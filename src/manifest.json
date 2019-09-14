@@ -10,10 +10,10 @@
   "content_scripts": [
     {
       "matches": [
-        "http*://*/*"
+        "<all_urls>"
       ],
       "js": [
-        "content-script.js"
+        "app/content-script/content-script.js"
       ]
     }
   ],
@@ -26,8 +26,6 @@
     "default_popup": "index.html#/popup"
   },
   "icons": {
-    "19": "assets/Icon-19.png",
-    "38": "assets/Icon-38.png"
   },
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
