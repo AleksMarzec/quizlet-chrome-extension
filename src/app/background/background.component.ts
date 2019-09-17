@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-event-page',
-  templateUrl: './event-page.component.html',
-  styleUrls: ['./event-page.component.scss']
+  selector: 'background',
+  templateUrl: './background.html',
+  styleUrls: ['./background.component.scss']
 })
-export class EventPageComponent implements OnInit {
+export class BackgroundComponent implements OnInit {
 
   constructor() {
     //this.initializeMessageListener();
@@ -17,7 +17,7 @@ export class EventPageComponent implements OnInit {
 
   private initializeRequestListener() {
     chrome.runtime.onMessage.addListener(function(request, sender) {
-      alert(`Received ${request}`);
+      console.log(`Received ${request}`);
     });
   }
 
